@@ -1,6 +1,7 @@
 # Interactive-Task-Manager
 
 # Interactive Task Manager (Observer Pattern) 🚀
+[![My Skills](https://skillicons.dev/icons?i=js,html,css,vscode)](https://skillicons.dev)
 
 A modern, functional Task Management application built with **Vanilla JavaScript**, implementing the **Observer Design Pattern** to manage state and UI updates reactively.
 
@@ -20,5 +21,3 @@ A modern, functional Task Management application built with **Vanilla JavaScript
 1. Clone this repository:
    ```bash
    git clone [https://github.com/username/task-manager-observer.git](https://github.com/username/task-manager-observer.git)
-
-![JavaScript](https://img.shields.io)
