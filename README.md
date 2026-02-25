@@ -20,3 +20,5 @@ A modern, functional Task Management application built with **Vanilla JavaScript
 1. Clone this repository:
    ```bash
    git clone [https://github.com/username/task-manager-observer.git](https://github.com/username/task-manager-observer.git)
+
+![VS Code](https://raw.githubusercontent.com)   
