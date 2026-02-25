@@ -1,0 +1,41 @@
+/* GLOBAL STYLE */
+@import url(root.css);
+/* COMPONENTS STYLE */
+@import url(components/input.css);
+@import url(components/progress.css);
+@import url(components/task.css);
+
+body {
+  margin: 1em;
+  color: white;
+  background-color: var(--body-color);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+button,
+input[type="checkbox"] {
+  cursor: pointer;
+}
+
+button {
+    outline: none;
+    border: none;
+    border-radius: 6px;
+}
+
+input[type = "text"] {
+  outline: none;
+  border: none;
+}
+
+h1 {
+  text-align: center;
+  margin: 8px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}

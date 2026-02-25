@@ -1,0 +1,108 @@
+
+#task-ctn {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  list-style: none;
+  margin: 1em auto;
+  padding: 1em;
+  max-width: 600px;
+  background: var(--primary-color1);
+  border-radius:  var(--bd-rd);
+
+}
+
+.task-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border-radius: 12px;
+  padding: 8px;
+  margin: auto;
+  width: 100%;
+  background: var(--primary-color2);
+  color: white;
+  opacity: 1;
+  transition: all 0.3s ease;
+  overflow: hidden;
+  position: relative;
+}
+
+.task-item:has(input:checked)::before {
+  content: "";
+  width: 6px;
+  height: 100%;
+  background-color: var(--succes);
+  position: absolute;
+  left: 0;
+}
+
+.task-item.animated {
+  transform: translateY(30px);
+  opacity: 0;
+}
+
+
+.task-item span {
+  width: 100%;
+}
+
+.task-item .del-btn {
+  outline: none;
+  border: none;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  color: rgba(0, 0, 0, 0.25);
+  font-weight: bold;
+  width: 18px;
+  height: 18px;
+  transition: all 0.5s ease-out;
+}
+
+.task-item .del-btn:hover {
+  background-color: red;
+  color: white;
+}
+
+input[type="checkbox"] {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 18px;
+  height: 18px;
+  padding: 10px;
+  margin-left: 6px;
+  border-radius: 6px;
+  border: 1px solid white;
+  background: transparent;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  vertical-align: middle;
+  transition: all 0.3s ease;
+}
+
+input:checked {
+  background-color: var(--succes);
+  border: 1px solid var(--succes);
+}
+
+input[type="checkbox"]:checked::after {
+  content: "✔";
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  line-height: 0;
+}
+
+input:checked + span {
+  text-decoration: line-through;
+  color: var(--succes);
+}
+

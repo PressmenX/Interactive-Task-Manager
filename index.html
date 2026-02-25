@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interactive Checklist Counter</title>
+  </head>
+  <link rel="stylesheet" href="style/main.css" />
+  <body>
+    <main>
+        <h1>Task Manager</h1>
+      <!-- === INPUT TASK === -->
+      <form id="task-input-form">
+        <input type="text" placeholder="Add New Task Here" />
+        <button type="submit" id="add-task">Add Task</button>
+        <button type="reset" id="clean-input">Clean</button>
+        <p class="msg">aa</p>
+      </form>
+
+      <!-- === PROGRESS INDIKATOR ==== -->
+      <div id="progress-ctn">
+        <div id="indicator">
+          <span id="total-task">--</span>
+          <span id="progress-counter">Completed Task : -/-</span>
+        </div>
+        <div id="progress-bar">
+          <span id="bar"></span><span id="val">100%</span>
+        </div>
+        <p id="progress-msg">Let's start your first task.</p>
+      </div>
+
+      <!-- === TASK SECTION ==== -->
+      <ul id="task-ctn">
+        <!-- Task item(li)... -->
+      </ul>
+    </main>
+
+    <script type="module" src="main.js"></script>
+  </body>
+</html>

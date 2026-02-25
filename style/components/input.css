@@ -1,0 +1,76 @@
+#task-input-form {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  max-width: 600px;
+  margin: auto;
+  padding: 1em 2em;
+  background-color: var(--primary-color1);
+  border-radius: var(--bd-rd);
+  grid-template-columns: 3fr 1fr 1fr;
+  grid-template-areas:
+    "input  button clean"
+    "message  message message";
+}
+
+form input {
+  grid-area: "input";
+  max-width: 400px;
+  border-radius: 6px;
+  padding: 6px;
+}
+
+#add-task {
+  grid-area: "button";
+  background: rgb(255, 234, 2);
+  color: rgba(0, 0, 0, 0.5);
+  font-weight: bold;
+  padding: 8px;
+}
+
+#clean-input {
+  grid-area: "clean";
+  background: rgb(255, 2, 2);
+  color: rgba(0, 0, 0, 0.7);
+  font-weight: bold;
+  padding: 8px;
+}
+
+#task-input-form button {
+  transition: all 0.3s ease;
+}
+
+#task-input-form button:hover {
+  transform: scale(1.05);
+}
+
+#add-task:hover {
+    box-shadow: 0 0 8px 2px rgba(255, 234, 2, 0.7);
+}
+
+#clean-input:hover {
+    box-shadow: 0 0 8px 2px  rgba(255, 2, 2, 1);
+}
+
+form .msg {
+    color: rgb(255, 215, 215);
+    background-color: rgba(255, 0, 0, 0.442);
+    width: fit-content;
+    font-size: 12px;
+    opacity: 0;
+    overflow: hidden;
+    max-height: 0;
+    margin: 0;
+    padding: 0;
+    transform: translateY(-20px);
+    transition: all 0.3s ease;
+}
+
+form .msg.isInvalid{
+    opacity: 1;
+    transform: translateY(0);
+    padding: 6px;
+    max-height: fit-content;
+    overflow: visible;
+}
